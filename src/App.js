@@ -1,5 +1,18 @@
 import React from 'react';
 
+const list = () => {
+  const endpoint = '/data-api/rest/Person';
+
+  fetch(endpoint)
+    .then(response => response.json())
+    .then(data => console.table(data));
+}
+
+const get = () => {}
+const update = () => {}
+const create = () => {}
+const del = () => {}
+
 function App() {
   return (
     <>
@@ -9,11 +22,11 @@ function App() {
           Open the console in the browser developer tools to see the API responses.
         </blockquote>
         <div>
-          <button id="list" onclick="list()">List</button>
-          <button id="get" onclick="get()">Get</button>
-          <button id="update" onclick="update()">Update</button>
-          <button id="create" onclick="create()">Create</button>
-          <button id="delete" onclick="del()">Delete</button>
+          <button id="list" onClick={() => {list();}}>List</button>
+          <button id="get" onClick={() => {get();}}>Get</button>
+          <button id="update" onClick={() => {update();}}>Update</button>
+          <button id="create" onClick={() => {create();}}>Create</button>
+          <button id="delete" onClick={() => {del();}}>Delete</button>
         </div>
       </div>
     </>
