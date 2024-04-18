@@ -19,6 +19,18 @@ const get = () => {
 
 const update = () => {
   console.log('update');
+
+  const id = 1;
+  const data = {
+    Name: "Molly"
+  };
+  const endpoint = '/data-api/rest/Person/Id';
+
+  fetch(`${endpoint}/${id}`, { method: "PUT",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(data)})
+    .then(response => response.json())
+    .then(data => console.table(data.value));
 }
 
 const create = () => {
