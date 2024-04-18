@@ -82,13 +82,13 @@ function App() {
           <h2>Tutorial Links</h2>
           <ul>
             <li>
-              <a href="https://learn.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=react#next-steps" target="_blank">Quickstart: Build your first static site with Azure Static Web Apps</a>
+              <a href="https://learn.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=react#next-steps">Quickstart: Build your first static site with Azure Static Web Apps</a>
             </li>
             <li>
-              <a href="https://learn.microsoft.com/en-us/azure/static-web-apps/database-azure-sql?tabs=bash&pivots=static-web-apps-rest" target="_blank">Tutorial: Add an Azure SQL database connection in Azure Static Web Apps (preview)</a>
+              <a href="https://learn.microsoft.com/en-us/azure/static-web-apps/database-azure-sql?tabs=bash&pivots=static-web-apps-rest">Tutorial: Add an Azure SQL database connection in Azure Static Web Apps (preview)</a>
             </li>
             <li>
-              <a href="https://learn.microsoft.com/en-us/azure/static-web-apps/database-configuration?source=recommendations" target="_blank">Database connection configuration in Azure Static Web Apps (preview)</a>
+              <a href="https://learn.microsoft.com/en-us/azure/static-web-apps/database-configuration?source=recommendations">Database connection configuration in Azure Static Web Apps (preview)</a>
             </li>
           </ul>
         </div>
