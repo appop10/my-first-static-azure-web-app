@@ -35,6 +35,19 @@ const update = () => {
 
 const create = () => {
   console.log('create');
+
+  const data = {
+    Name: "Pedro"
+  };
+  const endpoint = `/data-api/rest/Person/`;
+
+  fetch(endpoint, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  })
+    .then(response => response.json())
+    .then(data => console.table(data.value));
 }
 
 const del = () => {
