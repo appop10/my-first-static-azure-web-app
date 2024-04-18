@@ -5,7 +5,7 @@ const list = () => {
 
   fetch(endpoint)
     .then(response => response.json())
-    .then(data => console.table(data));
+    .then(data => console.table(data.value));
 }
 
 const get = () => {
