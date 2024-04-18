@@ -8,10 +8,21 @@ const list = () => {
     .then(data => console.table(data));
 }
 
-const get = () => {}
-const update = () => {}
-const create = () => {}
-const del = () => {}
+const get = () => {
+  console.log('get');
+}
+
+const update = () => {
+  console.log('update');
+}
+
+const create = () => {
+  console.log('create');
+}
+
+const del = () => {
+  console.log('delete');
+}
 
 function App() {
   return (
