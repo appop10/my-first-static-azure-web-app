@@ -22,7 +22,7 @@ const update = () => {
 
   const id = 1;
   const data = {
-    Name: "Molly"
+    Name: "Sunny"
   };
   const endpoint = '/data-api/rest/Person/Id';
 
