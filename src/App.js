@@ -9,7 +9,12 @@ const list = () => {
 }
 
 const get = () => {
-  console.log('get');
+  const id = 1;
+  const endpoint = `/data-api/rest/Person/Id`;
+
+  fetch(`${endpoint}/${id}`)
+    .then(response => response.json())
+    .then(data => console.table(data.value));
 }
 
 const update = () => {
