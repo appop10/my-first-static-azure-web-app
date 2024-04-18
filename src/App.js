@@ -18,8 +18,6 @@ const get = () => {
 }
 
 const update = () => {
-  console.log('update');
-
   const id = 1;
   const data = {
     Name: "Sunny"
@@ -34,8 +32,6 @@ const update = () => {
 }
 
 const create = () => {
-  console.log('create');
-
   const data = {
     Name: "Pedro"
   };
@@ -51,8 +47,6 @@ const create = () => {
 }
 
 const del = () => {
-  console.log('delete');
-
   const id = 3;
   const endpoint = '/data-api/rest/Person/Id';
 
