@@ -47,7 +47,7 @@ const create = () => {
 }
 
 const del = () => {
-  const id = 3;
+  const id = 4;
   const endpoint = '/data-api/rest/Person/Id';
 
   const response = fetch(`${endpoint}/${id}`, {
