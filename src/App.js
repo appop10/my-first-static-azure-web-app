@@ -52,6 +52,19 @@ const create = () => {
 
 const del = () => {
   console.log('delete');
+
+  const id = 3;
+  const endpoint = '/data-api/rest/Person/Id';
+
+  const response = fetch(`${endpoint}/${id}`, {
+    method: "DELETE"
+  });
+
+  if(response.ok) {
+    console.log(`Record deleted: ${ id }`)
+  } else {
+    console.log(response);
+  }
 }
 
 function App() {
