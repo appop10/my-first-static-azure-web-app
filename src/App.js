@@ -70,12 +70,13 @@ const del = () => {
 function App() {
   return (
     <>
-      <div>
+      <div className="overall-container">
         <h1>Static Web Apps Database Connections</h1>
         <blockquote>
           Open the console in the browser developer tools to see the API responses.
         </blockquote>
-        <div>
+
+        <div className="button-container">
           <button id="list" onClick={() => {list();}}>List</button>
           <button id="get" onClick={() => {get();}}>Get</button>
           <button id="update" onClick={() => {update();}}>Update</button>
@@ -83,7 +84,7 @@ function App() {
           <button id="delete" onClick={() => {del();}}>Delete</button>
         </div>
 
-        <div>
+        <div className="links-container">
           <h2>Tutorial Links</h2>
           <ul>
             <li>
